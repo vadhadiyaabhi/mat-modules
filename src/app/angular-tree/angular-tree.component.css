@@ -1,0 +1,14 @@
+#folder-menu{
+    width: 20%;
+    overflow-x: scroll;
+}
+
+mat-tree-node span:hover{
+    color: gray;
+    cursor: pointer;
+}
+/* 
+.file-link:hover{
+    color: gray;
+    cursor: pointer;
+} */

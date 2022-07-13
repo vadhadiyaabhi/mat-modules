@@ -1,0 +1,28 @@
+<div class="container">
+    Data from Parent to Bottom sheet is <small class="fw-bold">{{data.title + " " + data.value}}</small>
+</div>
+
+<mat-nav-list>
+    <a href="https://keep.google.com/" mat-list-item (click)="openLink($event)">
+      <span mat-line>Google Keep</span>
+      <span mat-line>Add to a note</span>
+    </a>
+  
+    <a href="https://docs.google.com/" mat-list-item (click)="openLink($event)">
+      <span mat-line>Google Docs</span>
+      <span mat-line>Embed in a document</span>
+    </a>
+  
+    <a href="https://plus.google.com/" mat-list-item (click)="openLink($event)">
+      <span mat-line>Google Plus</span>
+      <span mat-line>Share with your friends</span>
+    </a>
+  
+    <a href="https://hangouts.google.com/" mat-list-item (click)="openLink($event)">
+      <span mat-line>Google Hangouts</span>
+      <span mat-line>Show to your coworkers</span>
+    </a>
+  </mat-nav-list>
+
+  <button type="button" mat-raised-button color="accent" class="my-4 mx-2" (click)="closeBottomSheet()">Close BottomSheet</button>
+  
